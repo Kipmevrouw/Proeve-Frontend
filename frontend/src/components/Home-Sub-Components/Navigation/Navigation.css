@@ -1,3 +1,9 @@
+@media (max-width: 625px) {
+    .nav {
+      display: none;
+    }
+}
+
 .nav {
     padding: 15px 50px 15px 50px;
     position: fixed;

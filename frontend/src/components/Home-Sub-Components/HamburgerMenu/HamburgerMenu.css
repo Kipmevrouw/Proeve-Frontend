@@ -1,0 +1,97 @@
+@media (min-width: 625px) {
+    .hamburger-menu {
+      display: none;
+    }
+    .navHamburgerLogo {
+        display: none;
+    }
+  }
+
+    .hamburger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    }
+
+    .navHamburgerLogo {
+    width: 160px;
+    height: auto;
+    position: fixed;
+    margin: 20px 0px 0px 40px;
+    }
+
+  .menu-btn {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 999;
+  }
+  
+  .menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 50%;
+    height: 100%; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; 
+    transform: translateX(-100%); 
+    overflow-y: auto; 
+  }
+  
+  .menu-items.open {
+    transform: translateX(0);
+  }
+  
+  
+  .menu-btn__burger {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-btn__burger::before {
+    top: -8px;
+  }
+  
+  .menu-btn__burger::after {
+    top: 8px;
+  }
+
+  .menu-btn__cross::before,
+.menu-btn__cross::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.menu-btn__cross::before {
+  transform: rotate(45deg);
+}
+
+.menu-btn__cross::after {
+  transform: rotate(-45deg);
+}
