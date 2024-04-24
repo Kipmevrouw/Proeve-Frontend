@@ -4,3 +4,8 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
   }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+}

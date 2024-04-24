@@ -1,9 +1,16 @@
 .nav {
-    padding: 20px 50px 20px 50px;
+    padding: 15px 50px 15px 50px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: #ffffff00; /* default background color */
+    transition: background-color 0.3s ease;
+}
+
+.nav.scrolled {
+    background-color: #87bec7b7; /* background color when scrolled */
+  
 }
 
 .nav-container {
@@ -13,8 +20,8 @@
 }
 
 .navLogo {
-    width: 210px;
-    height: 70px;
+    width: 190px;
+    height: auto;
 }
 
 .navDiv_Left {
@@ -23,12 +30,12 @@
 
 .navDiv_Right {
     text-align: right;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .nav_Login {
     font-weight: 600;
-    text-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.493);
 }
 
 .nav_Login:hover {
@@ -44,12 +51,12 @@
     padding: 15px 30px 15px 30px;
     border-radius: 30px;
     border: none;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
     background-color: #87BEC7;
     color: white;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .nav_Signup:hover {

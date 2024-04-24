@@ -1,0 +1,25 @@
+.section_2_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 50px 35px 50px;
+}
+
+.section_2_div_top {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.section_2_div_top_h1 {
+    font-family: "Jockey One", sans-serif;
+    letter-spacing: 1px;
+}
+
+.section_2_div_under {
+    margin: 30px 0 0 0;
+}
+
+.section_2_div_under_image {
+    margin: 10px 50px 0px 50px;
+}

@@ -1,8 +1,10 @@
 import './Footer.css';
-const Footer = () => {
+const Footer = ({FooterText}) => {
     return (
         <>
-            Footer
+            <div className='footer_div'>
+                <p className='footer_div_p'>{FooterText}</p>
+            </div>
         </>
     );
 }

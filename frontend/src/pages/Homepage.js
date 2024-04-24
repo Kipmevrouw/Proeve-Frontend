@@ -10,8 +10,16 @@ const Homepage = () => {
                 Logo="/images/Home-Sub-images/TechCampusLogo.png"
             />
             <Section_1/>
-            {/* <Section_2/>
-            <Footer/> */}
+            <Section_2
+                Images_1="/images/Home-Sub-images/primary-logo.png"
+                Images_2="/images/Home-Sub-images/GTC.png"
+                Images_3="/images/Home-Sub-images/HMC.png"
+                Images_4="/images/Home-Sub-images/03_ROCvA_logo_LIJN_RGB (1).png"
+                Images_5="/images/Home-Sub-images/03_ROCvA_logo_MBO_Westpoort_LIJN_RGB.png"
+            />
+            <Footer
+                FooterText="Copyright © 2024 TechIsland"
+            />
         </>
     );
 }
