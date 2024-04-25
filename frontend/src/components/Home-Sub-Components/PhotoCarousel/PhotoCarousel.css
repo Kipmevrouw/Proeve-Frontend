@@ -1,0 +1,22 @@
+.photoCarousel {
+  width: 95%;
+  margin: 0px auto;
+  padding: 50px;
+}
+
+.photoCarouselImg {
+  width: 500px;
+}
+
+.slick-slide {
+  padding: 10px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .photoCarousel {
+    padding: 50px 20px 50px 20px;
+  }
+}

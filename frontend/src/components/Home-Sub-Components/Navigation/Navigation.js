@@ -65,9 +65,25 @@ const Navigation = ({ Logo }) => {
               )}
             </div>
             <ul className={`menu-items ${isOpen ? "open" : ""}`}>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
+              <div>
+              </div>
+              <div className="menu-items-li">
+                <a href="https://techcheck.nl/" className="Hamburger-a"><li className="Hamburger-li">Doe de test</li></a>
+                <a href="https://jet-net.nl/voortgezet-onderwijs/techniek-klas-halen/7-werelden-van-techniek/" className="Hamburger-a"><li className="Hamburger-li">Ondek de 7 werelden</li></a>
+              </div>
+              <div className="menu-items-div">
+                <Link
+                  to="/login"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  <a className="nav_Login">Inloggen</a>
+                </Link>
+                <Link to="/signup">
+                  <button type="button" className="nav_Signup">
+                    Schrijf je in!
+                  </button>
+                </Link>
+              </div>
             </ul>
           </div>
         </div>

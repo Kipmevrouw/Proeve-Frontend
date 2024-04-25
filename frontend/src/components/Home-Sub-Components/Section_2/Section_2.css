@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 35px 50px 35px 50px;
+  padding: 50px 50px 50px 50px;
 }
 
 .section_2_div_top {
@@ -22,4 +22,35 @@
 
 .section_2_div_under_image {
   margin: 10px 50px 0px 50px;
+}
+
+@media (max-width: 1620px) {
+  .section_2_div {
+    padding: 30px 25px 0px 25px;
+  }
+
+  .section_2_div_top {
+    font-size: 18px;
+  }
+
+  .section_2_div_under {
+    display: none;
+  }
+
+  .sectionCarouselImg {
+    width: 200px !important;
+  }
+
+  .sectionCarousel {
+    margin: 0 auto;
+    padding: 20px;
+    width: 95%;
+  }
+
+}
+
+@media (min-width: 1620px) {
+  .sectionCarousel {
+    display: none;
+  }
 }

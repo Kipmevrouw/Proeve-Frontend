@@ -1,6 +1,35 @@
 import "./Section_2.css";
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Section_2 = ({ Images_1, Images_2, Images_3, Images_4, Images_5 }) => {
+  const settings = {
+    infinite: true,
+    speed: 700,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <>
       <div className="section_2_div">
@@ -35,6 +64,25 @@ const Section_2 = ({ Images_1, Images_2, Images_3, Images_4, Images_5 }) => {
           ></img>
         </div>
       </div>
+      <div className="sectionCarousel">
+      <Slider {...settings}>
+        <div>
+          <img src={Images_1} alt="Image 1" className="sectionCarouselImg" />
+        </div>
+        <div>
+          <img src={Images_2} alt="Image 2" className="sectionCarouselImg" />
+        </div>
+        <div>
+          <img src={Images_3} alt="Image 3" className="sectionCarouselImg" />
+        </div>
+        <div>
+          <img src={Images_4} alt="Image 1" className="sectionCarouselImg" />
+        </div>
+        <div>
+          <img src={Images_5} alt="Image 2" className="sectionCarouselImg" />
+        </div>
+      </Slider>
+    </div>
     </>
   );
 };
