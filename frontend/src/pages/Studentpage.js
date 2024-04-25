@@ -1,9 +1,5 @@
 const Studentpage = () => {
-    return (
-        <>
-            Studentpage
-        </>
-    );
-}
+  return <>Studentpage</>;
+};
 
 export default Studentpage;
