@@ -18,3 +18,9 @@
     font-size: 13px;
   }
 }
+
+@media (max-width: 370px) {
+  .footer_div_p {
+    font-size: 11px;
+  }
+}

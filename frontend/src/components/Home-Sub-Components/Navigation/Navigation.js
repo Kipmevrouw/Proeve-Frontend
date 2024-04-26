@@ -69,7 +69,7 @@ const Navigation = ({ Logo }) => {
               </div>
               <div className="menu-items-li">
                 <a href="https://techcheck.nl/" className="Hamburger-a"><li className="Hamburger-li">Doe de test</li></a>
-                <a href="https://jet-net.nl/voortgezet-onderwijs/techniek-klas-halen/7-werelden-van-techniek/" className="Hamburger-a"><li className="Hamburger-li">Ondek de 7 werelden</li></a>
+                <a href="https://jet-net.nl/voortgezet-onderwijs/techniek-klas-halen/7-werelden-van-techniek/" className="Hamburger-a"><li className="Hamburger-li">Ontdek de 7 werelden</li></a>
               </div>
               <div className="menu-items-div">
                 <Link

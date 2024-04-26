@@ -49,6 +49,19 @@
 
 }
 
+@media (max-width: 500px) {
+  .sectionCarousel {
+    padding: 50px 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 370px) {
+  .section_2_div_top {
+    font-size: 1rem;
+  }
+}
+
 @media (min-width: 1620px) {
   .sectionCarousel {
     display: none;

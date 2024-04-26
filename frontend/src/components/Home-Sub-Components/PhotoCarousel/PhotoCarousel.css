@@ -1,7 +1,7 @@
 .photoCarousel {
   width: 95%;
   margin: 0px auto;
-  padding: 50px;
+  padding: 50px 20px;
 }
 
 .photoCarouselImg {
@@ -17,6 +17,7 @@
 }
 @media (max-width: 500px) {
   .photoCarousel {
-    padding: 50px 20px 50px 20px;
+    padding: 50px 20px;
+    width: 100%;
   }
 }
