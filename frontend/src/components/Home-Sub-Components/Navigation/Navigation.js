@@ -31,7 +31,9 @@ const Navigation = ({ Logo }) => {
       <nav className={scrolled ? "nav scrolled" : "nav"}>
         <div className="nav-container">
           <div className="navDiv_Left">
+            <Link to="/">
             <img src={Logo} alt="TechCampusLogo" className="navLogo"></img>
+            </Link>
           </div>
           <div className="navDiv_Right">
             <Link
@@ -48,11 +50,13 @@ const Navigation = ({ Logo }) => {
           </div>
         </div>
         <div>
+        <Link to="/">
           <img
             src={Logo}
             alt="TechCampusLogo"
             className="navHamburgerLogo"
           ></img>
+          </Link>
           <div className="hamburger-menu">
             <div
               className={`menu-btn ${isOpen ? "open" : ""}`}

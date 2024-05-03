@@ -12,6 +12,9 @@
   width: 0px;
 }
 
+.slick-arrow {
+  display: none !important;
+}
 /* Font-size */
 
 /* Web = 18px / 25px / 90px */
