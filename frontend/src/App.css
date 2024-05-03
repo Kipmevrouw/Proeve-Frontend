@@ -11,3 +11,11 @@
 ::-webkit-scrollbar {
   width: 0px;
 }
+
+.slick-prev:before {
+  display: none;
+}
+
+.slick-next:before {
+  display: none;
+}

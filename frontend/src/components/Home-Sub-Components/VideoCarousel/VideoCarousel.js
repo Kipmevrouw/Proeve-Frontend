@@ -15,7 +15,7 @@ const CustomPrevArrow = ({ onClick }) => (
 
 const CustomNextArrow = ({ onClick }) => (
   <div className="slick-arrow slick-next" onClick={onClick}>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 0 15 24" width="36" height="36">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 0 20 24" width="36" height="36">
       <path fill="none" d="M0 0h24v24H0z"/>
       <path d="M10.59 16.41L12 18l6-6-6-6-1.41 1.41L15.17 12"/>
     </svg>
