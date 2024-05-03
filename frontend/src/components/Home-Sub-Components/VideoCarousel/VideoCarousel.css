@@ -62,12 +62,12 @@
   }
 
   .carousel-container {
-    max-width: 290px;
+    max-width: 280px;
     margin: 0 auto;
   }
 
   .iframeVideo {
-    width: 275px;
-    height: 154.6875px;
+    width: 265px;
+    height: 149.0625px;
   }
 }

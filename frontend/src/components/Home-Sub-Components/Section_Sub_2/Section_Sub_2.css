@@ -71,11 +71,11 @@
 
 @media (max-width: 500px) {
   .sectionCarousel_sub_2 {
-    max-width: 290px;
+    max-width: 280px;
     margin: 0 auto;
   }
 
   .sectionCarouselImg {
-    width: 180px !important;
+    width: 175px !important;
   }
 }
