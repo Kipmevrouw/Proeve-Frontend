@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  
 }
 
 /* Scrollbar */
@@ -12,10 +13,9 @@
   width: 0px;
 }
 
+/* @media (min-width: 800px) {
 .slick-arrow {
   display: none !important;
 }
-/* Font-size */
+} */
 
-/* Web = 18px / 25px / 90px */
-/* Tel =  13px / 15px / 18px / 40px / 50px */

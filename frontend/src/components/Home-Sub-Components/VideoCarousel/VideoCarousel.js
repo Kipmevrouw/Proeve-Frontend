@@ -7,12 +7,12 @@ const VideoCarousel = ({ youtubeVideos, youtubeVideoTitles }) => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 2500,
+    speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
     autoplaySpeed: 5000,
     adaptiveHeight: true,
+    touchMove: true
   };
 
   return (

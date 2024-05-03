@@ -25,17 +25,20 @@ const Subpage = () => {
   ];
   return (
     <>
-      <Navigation Logo="/images/Home-Sub-images/TechCampusLogo.png" />
-      <Section_sub_1 Images_1="/images/Home-Sub-images/Werelden.jpg" />
-      <VideoCarousel youtubeVideos={youtubeVideos} youtubeVideoTitles={youtubeVideoTitles}/>
+      <Navigation Logo="/images/Home-Sub-images/TechCampusLogo.webp" />
+      <Section_sub_1 Images_1="/images/Home-Sub-images/Werelden.webp" />
+      <VideoCarousel
+        youtubeVideos={youtubeVideos}
+        youtubeVideoTitles={youtubeVideoTitles}
+      />
       <Section_Sub_2
-        Images_1="/images/Home-Sub-images/Sub-Techniek/20190219_TT_ICONEN_CMYK-1  mens en gezondheid.jpg"
-        Images_2="/images/Home-Sub-images/Sub-Techniek/20190219_TT_ICONEN_CMYK-2 voeding en natuur.jpg"
-        Images_3="/images/Home-Sub-images/Sub-Techniek/20190219_TT_ICONEN_CMYK-3 ontwerp, productie en wereldhandel.jpg"
-        Images_4="/images/Home-Sub-images/Sub-Techniek/20190219_TT_ICONEN_CMYK-4 high tech.jpg"
-        Images_5="/images/Home-Sub-images/Sub-Techniek/20190219_TT_ICONEN_CMYK-5 wonen werken en verkeer.jpg"
-        Images_6="/images/Home-Sub-images/Sub-Techniek/20190219_TT_ICONEN_CMYK-6 energie, water en veiligheid.jpg"
-        Images_7="/images/Home-Sub-images/Sub-Techniek/20190219_TT_ICONEN_CMYK-7 digitaal media entertainment.jpg"
+        Images_1="/images/Home-Sub-images/Sub-Techniek/mens-en-gezondheid.webp"
+        Images_2="/images/Home-Sub-images/Sub-Techniek/voeding-en-natuur.webp"
+        Images_3="/images/Home-Sub-images/Sub-Techniek/ontwerp-productie-en-wereldhandel.webp"
+        Images_4="/images/Home-Sub-images/Sub-Techniek/high-tech.webp"
+        Images_5="/images/Home-Sub-images/Sub-Techniek/wonen-werken-en-verkeer.webp"
+        Images_6="/images/Home-Sub-images/Sub-Techniek/energie-water-en-veiligheid.webp"
+        Images_7="/images/Home-Sub-images/Sub-Techniek/digitaal-media-entertainment.webp"
       />
       <Footer FooterText="Copyright © 2024 Techcampus Amsterdam" />
     </>

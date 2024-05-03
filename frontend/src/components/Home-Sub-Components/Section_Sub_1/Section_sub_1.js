@@ -1,5 +1,5 @@
 import "./Section_sub_1.css";
-import BackgroundImage from "./SubPageBackground.jpg";
+import BackgroundImage from "./SubPageBackground.webp";
 
 const Section_sub_1 = ({Images_1}) => {
   return (
