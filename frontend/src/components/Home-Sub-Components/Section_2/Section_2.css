@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 50px 50px 50px;
+  padding: 50px 50px;
 }
 
 .section_2_div_top {
@@ -46,7 +46,6 @@
     padding: 20px;
     width: 95%;
   }
-
 }
 
 @media (max-width: 500px) {

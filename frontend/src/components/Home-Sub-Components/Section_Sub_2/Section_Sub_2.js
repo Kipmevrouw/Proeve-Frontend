@@ -1,10 +1,17 @@
-import "./Section_2.css";
-import React from "react";
+import "./Section_Sub_2.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Section_2 = ({ Images_1, Images_2, Images_3, Images_4, Images_5 }) => {
+const Section_Sub_2 = ({
+  Images_1,
+  Images_2,
+  Images_3,
+  Images_4,
+  Images_5,
+  Images_6,
+  Images_7,
+}) => {
   const settings = {
     infinite: true,
     speed: 700,
@@ -32,35 +39,42 @@ const Section_2 = ({ Images_1, Images_2, Images_3, Images_4, Images_5 }) => {
   };
   return (
     <>
-      <div className="section_2_div">
-        <div className="section_2_div_top">
-          <h1 className="section_2_div_top_h1">Wij werken samen met</h1>
-        </div>
-        <div className="section_2_div_under">
+      <div className="Section_Sub_2_div">
+        <div className="Section_Sub_2_div_under">
           <img
             src={Images_1}
             alt="MediaCollege"
-            className="section_2_div_under_image"
+            className="Section_Sub_2_div_under_image"
           />
           <img
             src={Images_2}
             alt="GreenTech Campus MRA"
-            className="section_2_div_under_image"
+            className="Section_Sub_2_div_under_image"
           />
-          <img 
-            src={Images_3} 
-            alt="HMC" 
-            className="section_2_div_under_image" 
+          <img
+            src={Images_3}
+            alt="ROC College Westpoort"
+            className="Section_Sub_2_div_under_image"
           />
           <img
             src={Images_4}
             alt="ROC podium voor talent"
-            className="section_2_div_under_image"
+            className="Section_Sub_2_div_under_image"
           />
           <img
             src={Images_5}
             alt="ROC College Westpoort"
-            className="section_2_div_under_image"
+            className="Section_Sub_2_div_under_image"
+          />
+          <img
+            src={Images_6}
+            alt="ROC College Westpoort"
+            className="Section_Sub_2_div_under_image"
+          />
+          <img
+            src={Images_7}
+            alt="ROC College Westpoort"
+            className="Section_Sub_2_div_under_image"
           />
         </div>
       </div>
@@ -81,10 +95,16 @@ const Section_2 = ({ Images_1, Images_2, Images_3, Images_4, Images_5 }) => {
           <div>
             <img src={Images_5} alt="Image 5" className="sectionCarouselImg" />
           </div>
+          <div>
+            <img src={Images_6} alt="Image 6" className="sectionCarouselImg" />
+          </div>
+          <div>
+            <img src={Images_7} alt="Image 7" className="sectionCarouselImg" />
+          </div>
         </Slider>
       </div>
     </>
   );
 };
 
-export default Section_2;
+export default Section_Sub_2;
