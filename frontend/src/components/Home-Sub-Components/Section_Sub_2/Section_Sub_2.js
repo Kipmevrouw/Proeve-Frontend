@@ -21,15 +21,7 @@ const Section_Sub_2 = ({
     centerMode: true,
     responsive: [
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 700,
+        breakpoint: 800,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -78,7 +70,7 @@ const Section_Sub_2 = ({
           />
         </div>
       </div>
-      <div className="sectionCarousel">
+      <div className="sectionCarousel_sub_2">
         <Slider {...settings}>
           <div>
             <img src={Images_1} alt="Image 1" className="sectionCarouselImg" />

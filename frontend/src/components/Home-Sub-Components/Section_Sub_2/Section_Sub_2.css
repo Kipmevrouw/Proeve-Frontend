@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 15px 70px;
 }
 
 .Section_Sub_2_div_top {
@@ -11,24 +10,72 @@
   font-weight: 200;
 }
 
-.Section_Sub_2_div_top_h1 {
-  font-family: "Jockey One", sans-serif;
-  letter-spacing: 1px;
-}
-
 .Section_Sub_2_div_under_image {
   width: 225px;
   margin: 50px 10px 0px 10px;
 }
 
-@media (max-width: 1620px) {
-  .Section_Sub_2_div_under {
+@media (min-width: 1750px) {
+  .sectionCarousel_sub_2 {
     display: none;
   }
 }
 
-@media (min-width: 1620px) {
-  .sectionCarousel {
+@media (max-width: 1750px) {
+  .Section_Sub_2_div_under {
     display: none;
+  }
+
+  .sectionCarouselImg {
+    width: 250px !important;
+  }
+
+  .sectionCarousel_sub_2 {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .sectionCarousel_sub_2 {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .sectionCarouselImg {
+    width: 200px !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .Section_Sub_2_div {
+    padding: 50px 15px 70px;
+  }
+}
+
+@media (max-width: 800px) {
+  .Section_Sub_2_div {
+    padding: 30px 0px;
+  }
+
+  .sectionCarousel_sub_2 {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px 0px;
+  }
+
+  .sectionCarouselImg {
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .sectionCarousel_sub_2 {
+    max-width: 290px;
+    margin: 0 auto;
+  }
+
+  .sectionCarouselImg {
+    width: 180px !important;
   }
 }

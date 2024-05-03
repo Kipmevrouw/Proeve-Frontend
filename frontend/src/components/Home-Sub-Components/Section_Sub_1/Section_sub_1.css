@@ -4,13 +4,44 @@
   align-items: center;
   height: 100vh;
 }
-
-.section_sub_1_h1 {
+@media (min-width: 1450px) {
+  .section_sub_1_h1 {
     width: 50%;
     font-family: "Jockey One", sans-serif;
     color: white;
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.493);
     letter-spacing: 1px;
     font-size: 90px;
+  }
 }
 
+@media (min-width: 1200px) {
+  .section_sub_1_h1 {
+    width: 50%;
+    font-family: "Jockey One", sans-serif;
+    color: white;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.493);
+    letter-spacing: 1px;
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section_sub_1_h1 {
+    font-family: "Jockey One", sans-serif;
+    color: white;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.493);
+    letter-spacing: 1px;
+    font-size: 60px;
+  }
+
+  .section_sub_1_img {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .section_sub_1_h1 {
+    font-size: 35px;
+  }
+}

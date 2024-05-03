@@ -18,7 +18,7 @@ const Section_sub_1 = ({Images_1}) => {
           <h1 className="section_sub_1_h1">
             Ondek de 7 werelden
           </h1>
-          <img src={Images_1} alt="7 werelden in een spinnenweb" width={500} style={{borderRadius: "50px",}}/>
+          <img src={Images_1} alt="7 werelden in een spinnenweb" width={500} style={{borderRadius: "50px",}} className="section_sub_1_img"/>
         </div>
       </div>
     </>

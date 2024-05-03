@@ -18,7 +18,7 @@ const VideoCarousel = ({ youtubeVideos, youtubeVideoTitles }) => {
   return (
     <>
       <div className="VideoCarousel_div_top">
-        <h1 className="Section_Sub_2_div_top_h1">7 werelden van techniek</h1>
+        <h1 className="VideoCarousel_div_top_h1">7 werelden van techniek</h1>
       </div>
       <div className="carousel-container">
         <Slider {...settings}>
@@ -26,12 +26,11 @@ const VideoCarousel = ({ youtubeVideos, youtubeVideoTitles }) => {
             <div key={index}>
               <iframe
                 title={youtubeVideoTitles[index]}
-                width="1000"
-                height="562.5"
                 src={`https://www.youtube.com/embed/${videoId}`}
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                className="iframeVideo"
               ></iframe>
             </div>
           ))}
