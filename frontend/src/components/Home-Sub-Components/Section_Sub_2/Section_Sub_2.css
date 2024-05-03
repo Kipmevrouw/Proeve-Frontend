@@ -27,12 +27,13 @@
   }
 
   .sectionCarouselImg {
-    width: 250px !important;
+    width: 290px !important;
   }
 
   .sectionCarousel_sub_2 {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0px 0px 50px 0px;
   }
 }
 
@@ -44,7 +45,7 @@
   }
 
   .sectionCarouselImg {
-    width: 200px !important;
+    width: 210px !important;
   }
 }
 
@@ -60,23 +61,24 @@
   }
 
   .sectionCarousel_sub_2 {
-    max-width: 450px;
+    max-width: 480px;
     margin: 0 auto;
     padding: 20px 0px;
   }
 
   .sectionCarouselImg {
-    width: 300px !important;
+    width: 375px !important;
   }
 }
 
 @media (max-width: 500px) {
   .sectionCarousel_sub_2 {
-    max-width: 280px;
+    max-width: 310px;
     margin: 0 auto;
+    padding: 30px 0px 50px 0px;
   }
 
   .sectionCarouselImg {
-    width: 175px !important;
+    width: 205px !important;
   }
 }

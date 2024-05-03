@@ -19,7 +19,7 @@
 }
 
 .iframeVideo {
-  width: 1000px;
+  width: 1020px;
   height: 562.5px;
 }
 
@@ -34,8 +34,8 @@
   }
 
   .iframeVideo {
-    width: 725px;
-    height: 407.8125px;
+    width: 745px;
+    height: 419.0625px;
   }
 }
 
@@ -45,29 +45,29 @@
   }
 
   .carousel-container {
-    max-width: 450px;
+    max-width: 480px;
     margin: 0 auto;
   }
 
   .iframeVideo {
-    width: 430px;
-    height: 241.875px;
+    width: 475px;
+    height: 267.1875px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 501px) {
   .VideoCarousel_div_top {
     font-size: 15px;
     padding: 25px 15px;
   }
 
   .carousel-container {
-    max-width: 280px;
+    max-width: 310px;
     margin: 0 auto;
   }
 
   .iframeVideo {
-    width: 265px;
-    height: 149.0625px;
+    width: 310px;
+    height: 180.875px;
   }
 }

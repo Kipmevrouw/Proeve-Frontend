@@ -2,6 +2,25 @@ import "./VideoCarousel.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import React from "react";
+
+const CustomPrevArrow = ({ onClick }) => (
+  <div className="slick-arrow slick-prev" onClick={onClick}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="12 0 15 24" width="36" height="36">
+      <path fill="none" d="M0 0h24v24H0z"/>
+      <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12"/>
+    </svg>
+  </div>
+);
+
+const CustomNextArrow = ({ onClick }) => (
+  <div className="slick-arrow slick-next" onClick={onClick}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 0 15 24" width="36" height="36">
+      <path fill="none" d="M0 0h24v24H0z"/>
+      <path d="M10.59 16.41L12 18l6-6-6-6-1.41 1.41L15.17 12"/>
+    </svg>
+  </div>
+);
 
 const VideoCarousel = ({ youtubeVideos, youtubeVideoTitles }) => {
   const settings = {
@@ -11,8 +30,8 @@ const VideoCarousel = ({ youtubeVideos, youtubeVideoTitles }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplaySpeed: 5000,
-    adaptiveHeight: true,
-    touchMove: true
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
   };
 
   return (
