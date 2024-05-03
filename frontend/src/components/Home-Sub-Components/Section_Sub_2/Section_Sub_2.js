@@ -73,25 +73,25 @@ const Section_Sub_2 = ({
       <div className="sectionCarousel_sub_2">
         <Slider {...settings}>
           <div>
-            <img src={Images_1} alt="Image 1" className="sectionCarouselImg" />
+            <img src={Images_1} alt="Image 1" className="sectionCarouselImg_sub" />
           </div>
           <div>
-            <img src={Images_2} alt="Image 2" className="sectionCarouselImg" />
+            <img src={Images_2} alt="Image 2" className="sectionCarouselImg_sub" />
           </div>
           <div>
-            <img src={Images_3} alt="Image 3" className="sectionCarouselImg" />
+            <img src={Images_3} alt="Image 3" className="sectionCarouselImg_sub" />
           </div>
           <div>
-            <img src={Images_4} alt="Image 4" className="sectionCarouselImg" />
+            <img src={Images_4} alt="Image 4" className="sectionCarouselImg_sub" />
           </div>
           <div>
-            <img src={Images_5} alt="Image 5" className="sectionCarouselImg" />
+            <img src={Images_5} alt="Image 5" className="sectionCarouselImg_sub" />
           </div>
           <div>
-            <img src={Images_6} alt="Image 6" className="sectionCarouselImg" />
+            <img src={Images_6} alt="Image 6" className="sectionCarouselImg_sub" />
           </div>
           <div>
-            <img src={Images_7} alt="Image 7" className="sectionCarouselImg" />
+            <img src={Images_7} alt="Image 7" className="sectionCarouselImg_sub" />
           </div>
         </Slider>
       </div>

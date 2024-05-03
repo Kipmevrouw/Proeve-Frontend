@@ -47,6 +47,12 @@
   }
 
   .photoCarouselImg {
+    width: 255px;
+  }
+}
+
+@media (max-width: 400px) {
+  .photoCarouselImg {
     width: 200px;
   }
 }

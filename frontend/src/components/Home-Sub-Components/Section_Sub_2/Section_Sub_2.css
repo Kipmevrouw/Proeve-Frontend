@@ -26,7 +26,7 @@
     display: none;
   }
 
-  .sectionCarouselImg {
+  .sectionCarouselImg_sub {
     width: 290px !important;
   }
 
@@ -44,7 +44,7 @@
     padding: 0px 0px 40px;
   }
 
-  .sectionCarouselImg {
+  .sectionCarouselImg_sub {
     width: 210px !important;
   }
 }
@@ -66,7 +66,7 @@
     padding: 20px 0px;
   }
 
-  .sectionCarouselImg {
+  .sectionCarouselImg_sub {
     width: 375px !important;
   }
 }
@@ -78,7 +78,19 @@
     padding: 30px 0px 50px 0px;
   }
 
-  .sectionCarouselImg {
+  .sectionCarouselImg_sub {
     width: 205px !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .sectionCarousel_sub_2 {
+    max-width: 290px;
+    margin: 0 auto;
+    padding: 30px 0px 50px 0px;
+  }
+
+  .sectionCarouselImg_sub {
+    width: 185px !important;
   }
 }

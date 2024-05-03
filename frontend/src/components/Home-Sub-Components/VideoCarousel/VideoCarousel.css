@@ -71,3 +71,15 @@
     height: 180.875px;
   }
 }
+
+@media (max-width: 350px) {
+  .carousel-container {
+    max-width: 290px;
+    margin: 0 auto;
+  }
+
+  .iframeVideo {
+    width: 290px;
+    height: 163.125px;
+  }
+}

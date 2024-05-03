@@ -14,17 +14,9 @@ const Section_2 = ({ Images_1, Images_2, Images_3, Images_4, Images_5 }) => {
     centerMode: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 800,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
