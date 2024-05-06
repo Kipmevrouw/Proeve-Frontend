@@ -1,0 +1,113 @@
+.LoginFormNav {
+  padding: 20px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.LoginFormLogo {
+  width: 190px;
+  height: auto;
+}
+
+.LoginForm_form_div,
+.LoginForm_formImage_div {
+  width: 100%;
+}
+
+.LoginForm_form_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.LoginForm_form_h1 {
+  font-family: "Jockey One", sans-serif;
+}
+
+.LoginForm_form_input {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.LoginForm_input {
+  padding: 18px 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: #e0e0e0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+  font-size: 15px;
+  outline: none;
+}
+
+.LoginForm_Button {
+  margin: 35px 10px 15px 10px;
+  padding: 15px 130px;
+  border-radius: 50px;
+  border: none;
+  background-color: #87bec7;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+}
+
+.LoginForm_Button:hover {
+  background-color: #669299;
+  cursor: pointer;
+}
+
+.LoginForm_p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginForm_p_a {
+  color: #87bec7;
+  margin: 0px 0px 0px 2px;
+}
+
+.LoginForm_formImage_div {
+  display: flex;
+  align-items: stretch;
+}
+
+.RightWebImage {
+  width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+@media (min-width: 900px) {
+  .LoginFormSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .LoginFormLogo {
+    width: 130px;
+    height: auto;
+  }
+
+  .LoginForm_formImage_div {
+    display: none;
+  }
+
+  .LoginForm_input {
+    padding: 10px 50px;
+    border-radius: 50px;
+  }
+
+  .LoginForm_Button {
+    margin: 40px 0px 10px 0px;
+    padding: 13px 130px;
+  }
+}
