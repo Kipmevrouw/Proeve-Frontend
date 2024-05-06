@@ -1,6 +1,6 @@
-#Eind examen 4de jaars Software Developer
+# Eind examen 4de jaars Software Developer
 
-##Opdracht:
+## Opdracht:
 Op TechIsland kunnen leerlingen van VO (en PO) de wereld van techniek verkennen. Dit door mee te doen
 aan verschillende korte workshops. Zo ontdekken ze in één ochtend hoe leuk en spannend de werelden van
 techniek zijn. Leerlingen maken kennis met een technisch vak en/of ervaren hoe het is om te werken voor
@@ -22,18 +22,18 @@ De [frontend](https://github.com/Kipmevrouw/Proeve-Front-end) wordt gebouwd door
 
 De [backend](https://github.com/Streats22/TechIsland-Backend) wordt gebouwd door mijn teamgenoot Robin Schoenmaker.
 
-##Het project live:
+## Het project live:
 [Website](https://techyourtalentamsterdam.nl/).
 
-##Onze Trello:
+## Onze Trello:
 [Trello](https://trello.com/b/IA9v9vvG/tech-island).
 
-##De opdrachtgever:
+## De opdrachtgever:
 - TechIsLand (Evelien van Polanen Petel)
 
-##Beoordelaars:
+## Beoordelaars:
 - Erik Willems (Intern)
 - Robin Timman (Extern)
 
-##Coach:
+## Coach:
 - Bart Ros
