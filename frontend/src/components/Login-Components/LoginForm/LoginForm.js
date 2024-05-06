@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 import "./LoginForm.css";
 import React, { useState } from "react";
 const LoginForm = ({ Logo, loginImages }) => {
-  const [username, setUsername] = useState("");
+  const [leerlingnummer, setLeerlingnummer] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const testUsers = [{ username: "user1", password: "user1" }];
+    const testUsers = [{ leerlingnummer: "user1", password: "user1" }];
 
     const user = testUsers.find(
-      (user) => user.username === username && user.password === password
+      (user) => user.leerlingnummer === leerlingnummer && user.password === password
     );
 
     if (user) {
@@ -35,10 +35,10 @@ const LoginForm = ({ Logo, loginImages }) => {
             <div className="LoginForm_form_input">
               <input
                 type="text"
-                id="username"
+                id="leerlingnummer"
                 placeholder="Leerlingnummer"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                value={leerlingnummer}
+                onChange={(e) => setLeerlingnummer(e.target.value)}
                 className="LoginForm_input"
               />
             </div>
