@@ -11,6 +11,12 @@
   height: auto;
 }
 
+.form {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .LoginForm_form_div,
 .LoginForm_formImage_div {
   width: 100%;

@@ -42,7 +42,7 @@ const SignupForm = ({ Logo, SignupImages }) => {
         </div>
         <div className="SignupForm_form_div">
           <h1 className="SignupForm_form_h1">Inschrijven workshops</h1>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className="form">
             <div className="SignupForm_form_input">
               <input
                 type="email"

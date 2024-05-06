@@ -31,7 +31,7 @@ const LoginForm = ({ Logo, loginImages }) => {
       <div className="LoginFormSection">
         <div className="LoginForm_form_div">
           <h1 className="LoginForm_form_h1">Leerling Login</h1>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className="form">
             <div className="LoginForm_form_input">
               <input
                 type="text"

@@ -11,6 +11,12 @@
   height: auto;
 }
 
+.form {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .SignupForm_formImage_div {
   display: flex;
   align-items: stretch;
