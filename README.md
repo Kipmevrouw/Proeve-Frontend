@@ -18,10 +18,6 @@ De organisatoren kunnen dit definitief bevestigen en de leerlingen kunnen dan zi
 zijn op de dag dat zij komen. Op de dag dat de leerlingen naar TechIsland komen krijgen ze een badge met
 de workshops waarop ze ingedeeld zijn.
 
-De [frontend](https://github.com/Kipmevrouw/Proeve-Front-end) wordt gebouwd door Becky van der Meulen.
-
-De [backend](https://github.com/Streats22/TechIsland-Backend) wordt gebouwd door mijn teamgenoot Robin Schoenmaker.
-
 ## Het project live:
 [Website](https://techyourtalentamsterdam.nl/).
 
@@ -37,3 +33,8 @@ De [backend](https://github.com/Streats22/TechIsland-Backend) wordt gebouwd door
 
 ## Coach:
 - Bart Ros
+
+## Het team:
+De [frontend](https://github.com/Kipmevrouw/Proeve-Front-end) wordt gebouwd door Becky van der Meulen.
+
+De [backend](https://github.com/Streats22/TechIsland-Backend) wordt gebouwd door mijn teamgenoot Robin Schoenmaker.
