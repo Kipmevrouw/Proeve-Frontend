@@ -37,4 +37,4 @@ de workshops waarop ze ingedeeld zijn.
 ## Het team:
 De [frontend](https://github.com/Kipmevrouw/Proeve-Front-end) wordt gebouwd door Becky van der Meulen.
 
-De [backend](https://github.com/Streats22/TechIsland-Backend) wordt gebouwd door mijn teamgenoot Robin Schoenmaker.
+De [backend](https://github.com/Streats22/TechIsland-Backend) wordt gebouwd door Robin Schoenmaker.
