@@ -55,6 +55,7 @@ const LoginForm = ({ Logo, loginImages }) => {
             <button type="submit" className="LoginForm_Button">
               Inloggen
             </button>
+            {errorMessage && <p className="LoginForm_p">{errorMessage}</p>}
             <p className="LoginForm_p">
               Bent u docent? Klik dan{" "}
               <a href="" className="LoginForm_p_a">
@@ -62,7 +63,6 @@ const LoginForm = ({ Logo, loginImages }) => {
               </a>
               !
             </p>
-            {errorMessage && <p>{errorMessage}</p>}
           </form>
         </div>
         <div className="LoginForm_formImage_div">
