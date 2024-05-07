@@ -83,9 +83,11 @@ const SignupForm = ({ Logo, SignupImages }) => {
                 <option value="" className="SignupForm_input_dropdown">
                   - Selecteer jouw uitslag -
                 </option>
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
+                <option value="De-vernieuwer">De vernieuwer</option>
+                <option value="De-maatschappelijke-toepasser">De maatschappelijke toepasser</option>
+                <option value="De-ontdekker">De ontdekker</option>
+                <option value="De-creatieve-maker">De creatieve maker</option>
+                <option value="De-doener">De doener</option>
               </select>
             </div>
             <div className="SignupForm_form_input">
@@ -98,9 +100,11 @@ const SignupForm = ({ Logo, SignupImages }) => {
                 <option value="" className="SignupForm_input_dropdown">
                   - Selecteer jouw uitslag -
                 </option>
-                <option value="D">D</option>
-                <option value="E">E</option>
-                <option value="F">F</option>
+                <option value="De-vernieuwer">De vernieuwer</option>
+                <option value="De-maatschappelijke-toepasser">De maatschappelijke toepasser</option>
+                <option value="De-ontdekker">De ontdekker</option>
+                <option value="De-creatieve-maker">De creatieve maker</option>
+                <option value="De-doener">De doener</option>
               </select>
             </div>
             <div className="SignupForm_form_input">

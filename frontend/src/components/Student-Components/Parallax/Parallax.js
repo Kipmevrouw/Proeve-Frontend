@@ -15,7 +15,6 @@ const Parallax = ({ Logo }) => {
         </nav>
         <div className="kaart">
           <h2>Mijn Kaart</h2>
-          
         </div>
       </div>
     </>
