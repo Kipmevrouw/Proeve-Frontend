@@ -11,7 +11,8 @@ const LoginForm = ({ Logo, loginImages }) => {
     const testUsers = [{ leerlingnummer: "user1", password: "user1" }];
 
     const user = testUsers.find(
-      (user) => user.leerlingnummer === leerlingnummer && user.password === password
+      (user) =>
+        user.leerlingnummer === leerlingnummer && user.password === password
     );
 
     if (user) {
@@ -52,9 +53,11 @@ const LoginForm = ({ Logo, loginImages }) => {
                 className="LoginForm_input"
               />
             </div>
-            <button type="submit" className="LoginForm_Button">
-              Inloggen
-            </button>
+            <Link to="/studentpage">
+              <button type="submit" className="LoginForm_Button">
+                Inloggen
+              </button>
+            </Link>
             {errorMessage && <p className="LoginForm_p">{errorMessage}</p>}
             <p className="LoginForm_p">
               Bent u docent? Klik dan{" "}
