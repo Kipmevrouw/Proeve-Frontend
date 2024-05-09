@@ -1,7 +1,11 @@
-import Parallax from "../components/Student-Components/Parallax/Parallax";
+import Dashboard from "../components/Student-Components/Dashboard/Dashboard";
 
 const Studentpage = () => {
-  return <Parallax Logo="/images/Home-Sub-images/TechCampusLogo.webp" />;
+  return (
+    <>
+      <Dashboard Logo="/images/Home-Sub-images/TechCampusLogo.webp" />
+    </>
+  );
 };
 
 export default Studentpage;
