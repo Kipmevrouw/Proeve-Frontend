@@ -35,37 +35,30 @@ const Section_Sub_2 = ({
         <div className="Section_Sub_2_div_under">
           <img
             src={Images_1}
-            alt="MediaCollege"
             className="Section_Sub_2_div_under_image"
           />
           <img
             src={Images_2}
-            alt="GreenTech Campus MRA"
             className="Section_Sub_2_div_under_image"
           />
           <img
             src={Images_3}
-            alt="ROC College Westpoort"
             className="Section_Sub_2_div_under_image"
           />
           <img
             src={Images_4}
-            alt="ROC podium voor talent"
             className="Section_Sub_2_div_under_image"
           />
           <img
             src={Images_5}
-            alt="ROC College Westpoort"
             className="Section_Sub_2_div_under_image"
           />
           <img
             src={Images_6}
-            alt="ROC College Westpoort"
             className="Section_Sub_2_div_under_image"
           />
           <img
             src={Images_7}
-            alt="ROC College Westpoort"
             className="Section_Sub_2_div_under_image"
           />
         </div>

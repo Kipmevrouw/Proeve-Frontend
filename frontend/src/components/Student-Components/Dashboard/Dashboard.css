@@ -27,14 +27,26 @@
   height: 70%;
   width: 70%;
   border-radius: 30px;
+  padding: 50px;
+}
+
+.dashboard_h1 {
+  font-family: "Jockey One", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.dashboard_h1 {
-  font-family: "Jockey One", sans-serif;
+.dashboard_Cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard_Cards_image {
+  width: 350px;
+  margin: 50px 10px 0px 10px;
 }
 
 .dashboard_Uitloggen {
