@@ -5,13 +5,43 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Dashboard = ({ Logo, Images_1, Images_2, Images_3 }) => {
+  const CustomPrevArrow = ({ onClick }) => (
+    <div className="slick-arrow slick-prev" onClick={onClick}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="12 0 15 24"
+        width="36"
+        height="36"
+      >
+        <path fill="none" d="M0 0h24v24H0z" />
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12" />
+      </svg>
+    </div>
+  );
+
+  const CustomNextArrow = ({ onClick }) => (
+    <div className="slick-arrow slick-next" onClick={onClick}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="10 0 20 24"
+        width="36"
+        height="36"
+      >
+        <path fill="none" d="M0 0h24v24H0z" />
+        <path d="M10.59 16.41L12 18l6-6-6-6-1.41 1.41L15.17 12" />
+      </svg>
+    </div>
+  );
+
   const settings = {
+    dots: true,
     infinite: true,
-    speed: 700,
-    slidesToShow: 3,
+    speed: 1500,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    centerMode: true,
+    autoplaySpeed: 5000,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
     responsive: [
       {
         breakpoint: 800,
@@ -44,7 +74,10 @@ const Dashboard = ({ Logo, Images_1, Images_2, Images_3 }) => {
                 vitaler en gezonder te maken. Mét behulp van de nieuwste
                 technische toepassingen. In deze wereld werkt men aan het
                 ontwerpen, maken, onderhouden en bedienen van medische apparaten
-                en hulpmiddelen. <a href="">Bekijk de video.</a>
+                en hulpmiddelen.{" "}
+                <a href="" className="card_A">
+                  Bekijk de video.
+                </a>
               </p>
             </div>
             <div className="card">
@@ -54,7 +87,9 @@ const Dashboard = ({ Logo, Images_1, Images_2, Images_3 }) => {
                 steeds groeiende wereldbevolking van genoeg en gezond voedsel te
                 blijven voorzien. Én tegelijkertijd te zorgen dat het in balans
                 met de natuur gebeurt. Hier draagt iedereen bij aan een betere
-                wereld. <a href="">Bekijk de video.</a>
+                <a href="" className="card_A">
+                  Bekijk de video.
+                </a>
               </p>
             </div>
             <div className="card">
@@ -64,32 +99,57 @@ const Dashboard = ({ Logo, Images_1, Images_2, Images_3 }) => {
                 ontwerpen, maken en verkopen we producten en diensten die de
                 wereldeconomie draaiende houden. Om alles op te slaan en te
                 vervoeren zijn mega-magazijnen, vliegvelden en havens nodig.{" "}
-                <a href="">Bekijk de video.</a>
+                <a href="" className="card_A">
+                  Bekijk de video.
+                </a>
               </p>
             </div>
           </div>
-          <div className="sectionCarousel_sub_2">
+          <div className="dashboard_Cards_responsive">
             <Slider {...settings}>
-              <div>
-                <img
-                  src={Images_1}
-                  alt="Image 1"
-                  className="sectionCarouselImg_sub"
-                />
+              <div className="card_wrapper">
+                <div className="card">
+                  <img src={Images_1} className="dashboard_Cards_image" />
+                  <p className="card_P">
+                    In de wereld van Mens & Gezondheid draait alles om mensen
+                    vitaler en gezonder te maken. Mét behulp van de nieuwste
+                    technische toepassingen. In deze wereld werkt men aan het
+                    ontwerpen, maken, onderhouden en bedienen van medische
+                    apparaten en hulpmiddelen.
+                  </p>
+                  <a href="" className="card_A">
+                    Bekijk de video.
+                  </a>
+                </div>
               </div>
-              <div>
-                <img
-                  src={Images_2}
-                  alt="Image 2"
-                  className="sectionCarouselImg_sub"
-                />
+              <div className="card_wrapper">
+                <div className="card">
+                  <img src={Images_2} className="dashboard_Cards_image" />
+                  <p className="card_P">
+                    In de wereld van Voeding & Natuur is de grote uitdaging om
+                    de steeds groeiende wereldbevolking van genoeg en gezond
+                    voedsel te blijven voorzien. Én tegelijkertijd te zorgen dat
+                    het in balans met de natuur gebeurt. Hier draagt iedereen
+                    bij aan een betere wereld.
+                  </p>
+                  <a href="" className="card_A">
+                    Bekijk de video.
+                  </a>
+                </div>
               </div>
-              <div>
-                <img
-                  src={Images_3}
-                  alt="Image 3"
-                  className="sectionCarouselImg_sub"
-                />
+              <div className="card_wrapper">
+                <div className="card">
+                  <img src={Images_3} className="dashboard_Cards_image" />
+                  <p className="card_P">
+                    In de wereld van Ontwerp, Productie & Wereldhandel bedenken,
+                    ontwerpen, maken en verkopen we producten en diensten die de
+                    wereldeconomie draaiende houden. Om alles op te slaan en te
+                    vervoeren zijn mega-magazijnen, vliegvelden en havens nodig.{" "}
+                  </p>
+                  <a href="" className="card_A">
+                    Bekijk de video.
+                  </a>
+                </div>
               </div>
             </Slider>
           </div>

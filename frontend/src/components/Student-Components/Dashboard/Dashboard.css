@@ -30,33 +30,20 @@
   padding: 50px;
 }
 
-.dashboard_h1 {
-  font-family: "Jockey One", sans-serif;
+.dashboard_Cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 0px 0px 20px 0px;
-}
-
-.dashboard_Cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.card {
-  max-width: 350px;
-  max-height: 500px;
-  padding: 20px 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  gap: 30px;
 }
 
 .card:hover {
   cursor: pointer;
-  border: solid #87bec7 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin: 0px 0px 20px 0px;
 }
 
 .dashboard_Cards_image {
@@ -86,4 +73,102 @@
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+@media (min-width: 1651px) {
+  .dashboard_Setup {
+    background-color: white;
+    height: 70%;
+    width: 70%;
+    border-radius: 30px;
+    padding: 50px;
+  }
+
+  .dashboard_h1 {
+    font-family: "Jockey One", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 0px 50px 0px;
+  }
+
+  .dashboard_Cards_responsive {
+    display: none;
+  }
+
+  .card {
+    max-width: 350px;
+    max-height: 500px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+@media (max-width: 1650px) {
+  .dashboard_Setup {
+    background-color: white;
+    height: 70%;
+    width: 70%;
+    border-radius: 30px;
+    padding: 20px;
+  }
+
+  .dashboard_h1 {
+    font-family: "Jockey One", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .dashboard_Setup {
+    background-color: white;
+    height: 70%;
+    width: 90%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .dashboard_Cards {
+    display: none;
+  }
+
+  .dashboard_Cards_responsive {
+    width: 40%;
+  }
+
+  .card_A {
+    padding: 0px 10px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .dashboard_Cards_responsive {
+    width: 65%;
+  }
+}
+
+@media (max-width: 850px) {
+  .dashboard_Cards_responsive {
+    width: 85%;
+  }
+}
+
+@media (max-width: 500px) {
+  .dashboard_Cards_responsive {
+    width: 95%;
+  }
+
+  .card_P {
+    font-size: 12px;
+  }
+
+  .card_A {
+    font-size: 12px;
+  }
 }
