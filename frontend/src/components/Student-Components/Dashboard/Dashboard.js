@@ -37,14 +37,35 @@ const Dashboard = ({ Logo, Images_1, Images_2, Images_3 }) => {
         <div className="dashboard_Setup">
           <h1 className="dashboard_h1">Jouw workshops:</h1>
           <div className="dashboard_Cards">
-            <div>
+            <div className="card">
               <img src={Images_1} className="dashboard_Cards_image" />
+              <p className="card_P">
+                In de wereld van Mens & Gezondheid draait alles om mensen
+                vitaler en gezonder te maken. Mét behulp van de nieuwste
+                technische toepassingen. In deze wereld werkt men aan het
+                ontwerpen, maken, onderhouden en bedienen van medische apparaten
+                en hulpmiddelen. <a href="">Bekijk de video.</a>
+              </p>
             </div>
-            <div>
+            <div className="card">
               <img src={Images_2} className="dashboard_Cards_image" />
+              <p className="card_P">
+                In de wereld van Voeding & Natuur is de grote uitdaging om de
+                steeds groeiende wereldbevolking van genoeg en gezond voedsel te
+                blijven voorzien. Én tegelijkertijd te zorgen dat het in balans
+                met de natuur gebeurt. Hier draagt iedereen bij aan een betere
+                wereld. <a href="">Bekijk de video.</a>
+              </p>
             </div>
-            <div>
+            <div className="card">
               <img src={Images_3} className="dashboard_Cards_image" />
+              <p className="card_P">
+                In de wereld van Ontwerp, Productie & Wereldhandel bedenken,
+                ontwerpen, maken en verkopen we producten en diensten die de
+                wereldeconomie draaiende houden. Om alles op te slaan en te
+                vervoeren zijn mega-magazijnen, vliegvelden en havens nodig.{" "}
+                <a href="">Bekijk de video.</a>
+              </p>
             </div>
           </div>
           <div className="sectionCarousel_sub_2">

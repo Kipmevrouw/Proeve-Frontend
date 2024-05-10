@@ -36,17 +36,35 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0px 0px 20px 0px;
 }
 
 .dashboard_Cards {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+}
+
+.card {
+  max-width: 350px;
+  max-height: 500px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover {
+  cursor: pointer;
+  border: solid #87bec7 5px;
 }
 
 .dashboard_Cards_image {
-  width: 350px;
-  margin: 50px 10px 0px 10px;
+  width: 100%;
+}
+
+.card_P {
+  padding: 10px;
 }
 
 .dashboard_Uitloggen {
