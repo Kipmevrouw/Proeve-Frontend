@@ -86,7 +86,7 @@ const Dashboard = ({ Logo, Images_1, Images_2, Images_3 }) => {
                 In de wereld van Voeding & Natuur is de grote uitdaging om de
                 steeds groeiende wereldbevolking van genoeg en gezond voedsel te
                 blijven voorzien. Én tegelijkertijd te zorgen dat het in balans
-                met de natuur gebeurt. Hier draagt iedereen bij aan een betere
+                met de natuur gebeurt. Hier draagt iedereen bij aan een betere wereld. {" "}
                 <a href="" className="card_A">
                   Bekijk de video.
                 </a>
