@@ -84,9 +84,9 @@ const Dashboard = ({ Logo, Images_1, Images_2, Images_3 }) => {
               <img src={Images_2} className="dashboard_Cards_image" />
               <p className="card_P">
                 In de wereld van Voeding & Natuur is de grote uitdaging om de
-                steeds groeiende wereldbevolking van genoeg en gezond voedsel te
+                groeiende wereldbevolking van genoeg en gezond voedsel te
                 blijven voorzien. Én tegelijkertijd te zorgen dat het in balans
-                met de natuur gebeurt. Hier draagt iedereen bij aan een betere wereld. {" "}
+                met de natuur gebeurt. {" "}
                 <a href="" className="card_A">
                   Bekijk de video.
                 </a>
@@ -96,9 +96,8 @@ const Dashboard = ({ Logo, Images_1, Images_2, Images_3 }) => {
               <img src={Images_3} className="dashboard_Cards_image" />
               <p className="card_P">
                 In de wereld van Ontwerp, Productie & Wereldhandel bedenken,
-                ontwerpen, maken en verkopen we producten en diensten die de
-                wereldeconomie draaiende houden. Om alles op te slaan en te
-                vervoeren zijn mega-magazijnen, vliegvelden en havens nodig.{" "}
+                ontwerpen, maken en verkopen we producten en diensten. Om alles op te slaan en te
+                vervoeren zijn magazijnen, vliegvelden en havens nodig.{" "}
                 <a href="" className="card_A">
                   Bekijk de video.
                 </a>
