@@ -35,6 +35,4 @@ de workshops waarop ze ingedeeld zijn.
 - Bart Ros
 
 ## Het team:
-De [frontend](https://github.com/Kipmevrouw/Proeve-Front-end) wordt gebouwd door Becky van der Meulen.
-
-De [backend](https://github.com/Streats22/TechIsland-Backend) wordt gebouwd door Robin Schoenmaker.
+De [frontend] & [backend] (https://github.com/Kipmevrouw/Proeve-Front-end) wordt gebouwd door Becky van der Meulen.
