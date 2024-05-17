@@ -1,50 +1,46 @@
 import { Link } from "react-router-dom";
 import "./SignupForm.css";
 import React, { useState, useEffect } from "react";
+import axios from 'axios';
 
 const SignupForm = ({ Logo, SignupImages }) => {
-  const [gebruiker, setGebruiker] = useState({
+  const [values, setValues] = useState({
     voornaam: "",
     achternaam: "",
     school: "",
     code: "",
     uitslag1: "",
     uitslag2: "",
-    password: "",
-    repeatPassword: "",
-    checkboxVinkje: false,
+    wachtwoord: "",
+    herhaalWachtwoord: "",
+    akkoort_voorwaarden: false,
   });
-
-  useEffect(() => {
-    const fetchGebruiker = async () => {
-      try {
-        const response = await fetch('/api/gebruiker');
-        const data = await response.json();
-        setGebruiker(data);
-      } catch (error) {
-        console.error('Fout bij ophalen van gebruiker:', error);
-      }
-    };
-
-    fetchGebruiker();
-  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setGebruiker({ ...gebruiker, [name]: value });
+    setValues({ ...values, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    if (!gebruiker.code.startsWith("tyt")) {
-      alert("Ongeldige code. Vraag jouw code aan de docent!");
-      return;
-    }
-    e.preventDefault();
-    if (gebruiker.password !== gebruiker.repeatPassword) {
-      alert("Wachtwoorden komen niet overeen");
-      return;
-    }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  
+  if (!String(values.code).startsWith("tyt")) {
+    alert("Onbekend nummer. Vraag hulp aan jouw docent!");
+    return;
+  }
+
+  event.preventDefault();
+  if (values.wachtwoord !== values.herhaalWachtwoord) {
+    alert("Wachtwoorden komen niet overeen");
+    return;
+  }  
+  
+    axios.post('http://localhost:3002/signup', values)
+      .then(res => console.log("succes!!!!!"))
+      .catch(err => console.log(err));
   };
+  
+  
   return (
     <>
       <div className="SignupFormNav">
@@ -68,7 +64,6 @@ const SignupForm = ({ Logo, SignupImages }) => {
                 type="text"
                 name="voornaam"
                 placeholder="Voornaam"
-                value={gebruiker.voornaam}
                 onChange={handleChange}
                 className="SignupForm_input"
                 required
@@ -79,7 +74,6 @@ const SignupForm = ({ Logo, SignupImages }) => {
                 type="text"
                 name="achternaam"
                 placeholder="Achternaam"
-                value={gebruiker.achternaam}
                 onChange={handleChange}
                 className="SignupForm_input"
                 required
@@ -90,7 +84,6 @@ const SignupForm = ({ Logo, SignupImages }) => {
                 type="text"
                 name="school"
                 placeholder="School"
-                value={gebruiker.school}
                 onChange={handleChange}
                 className="SignupForm_input"
                 required
@@ -100,8 +93,8 @@ const SignupForm = ({ Logo, SignupImages }) => {
               <input
                 type="text"
                 name="code"
+                value={values.code}
                 placeholder="Code (Ontvangen van je docent)"
-                value={gebruiker.code}
                 onChange={handleChange}
                 className="SignupForm_input"
                 required
@@ -110,7 +103,6 @@ const SignupForm = ({ Logo, SignupImages }) => {
             <div className="SignupForm_form_input">
               <select
                 name="uitslag1"
-                value={gebruiker.uitslag1}
                 onChange={handleChange}
                 className="SignupForm_input"
                 required
@@ -130,7 +122,6 @@ const SignupForm = ({ Logo, SignupImages }) => {
             <div className="SignupForm_form_input">
               <select
                 name="uitslag2"
-                value={gebruiker.uitslag2}
                 onChange={handleChange}
                 className="SignupForm_input"
                 required
@@ -150,9 +141,9 @@ const SignupForm = ({ Logo, SignupImages }) => {
             <div className="SignupForm_form_input">
               <input
                 type="password"
-                name="password"
+                name="wachtwoord"
                 placeholder="Wachtwoord"
-                value={gebruiker.password}
+                value={values.wachtwoord}
                 onChange={handleChange}
                 className="SignupForm_input"
               />
@@ -160,9 +151,9 @@ const SignupForm = ({ Logo, SignupImages }) => {
             <div className="SignupForm_form_input">
               <input
                 type="password"
-                name="repeatPassword"
+                name="herhaalWachtwoord"
                 placeholder="Herhaal wachtwoord"
-                value={gebruiker.repeatPassword}
+                value={values.herhaalWachtwoord}
                 onChange={handleChange}
                 className="SignupForm_input"
               />
@@ -171,8 +162,7 @@ const SignupForm = ({ Logo, SignupImages }) => {
               <input
                 type="checkbox"
                 id="agreement"
-                name="checkbox"
-                value={gebruiker.checkboxVinkje}
+                name="akkoort_voorwaarden"
                 onChange={handleChange}
                 required
               />

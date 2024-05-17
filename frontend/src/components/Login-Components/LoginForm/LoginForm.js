@@ -1,25 +1,19 @@
 import { Link } from "react-router-dom";
 import "./LoginForm.css";
 import React, { useState } from "react";
+import axios from 'axios';
+
 const LoginForm = ({ Logo, loginImages }) => {
-  const [leerlingnummer, setLeerlingnummer] = useState("");
-  const [password, setPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [voornaam, setVoornaam] = useState("");
+  const [achternaam, setAchternaam] = useState("");
+  const [code, setCode] = useState("");
+  const [wachtwoord, setWachtwoord] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const testUsers = [{ leerlingnummer: "user1", password: "user1" }];
-
-    const user = testUsers.find(
-      (user) =>
-        user.leerlingnummer === leerlingnummer && user.password === password
-    );
-
-    if (user) {
-      alert("Inloggen gelukt!");
-    } else {
-      setErrorMessage("Onjuiste gebruikersnaam of wachtwoord.");
-    }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+      axios.post('http://localhost:3002/login', {voornaam, achternaam, code, wachtwoord})
+      .then(res => console.log(res))
+      .catch(err => console.log(err));
   };
 
   return (
@@ -36,29 +30,46 @@ const LoginForm = ({ Logo, loginImages }) => {
             <div className="LoginForm_form_input">
               <input
                 type="text"
-                id="leerlingnummer"
-                placeholder="Leerlingnummer"
-                value={leerlingnummer}
-                onChange={(e) => setLeerlingnummer(e.target.value)}
+                id="voornaam"
+                placeholder="Voornaam"
+                value={voornaam}
+                onChange={(e) => setVoornaam(e.target.value)}
+                className="LoginForm_input"
+              />
+            </div>
+            <div className="LoginForm_form_input">
+              <input
+                type="text"
+                id="achternaam"
+                placeholder="Achternaam"
+                value={achternaam}
+                onChange={(e) => setAchternaam(e.target.value)}
+                className="LoginForm_input"
+              />
+            </div>
+            <div className="LoginForm_form_input">
+              <input
+                type="text"
+                id="code"
+                placeholder="Code"
+                value={code}
+                onChange={(e) => setCode(e.target.value)}
                 className="LoginForm_input"
               />
             </div>
             <div className="LoginForm_form_input">
               <input
                 type="password"
-                id="password"
+                id="wachtwoord"
                 placeholder="Wachtwoord"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                value={wachtwoord}
+                onChange={(e) => setWachtwoord(e.target.value)}
                 className="LoginForm_input"
               />
             </div>
-            <Link to="/studentpage">
               <button type="submit" className="LoginForm_Button">
                 Inloggen
               </button>
-            </Link>
-            {errorMessage && <p className="LoginForm_p">{errorMessage}</p>}
             <p className="LoginForm_p">
               Bent u docent? Klik dan{" "}
               <a href="" className="LoginForm_p_a">
