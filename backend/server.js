@@ -73,7 +73,7 @@ app.post("/login", (req, res) => {
     );
   });  
 
-const PORT = 3002; // Change this to any available port you prefer
+const PORT = 3002;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
