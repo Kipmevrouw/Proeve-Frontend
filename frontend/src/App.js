@@ -8,6 +8,7 @@ import Subpage from "./pages/Subpage";
 import ProtectedRoute from "./components/Login-Components/LoginForm/ProtectedRoute";
 import Logout from "./components/Login-Components/LoginForm/Logout";
 import SuccessPage from "./components/Signup-Components/SignupForm/Succespage";
+import Policypage from "./pages/Policypage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Homepage />}></Route>
         <Route path="/workshops" element={<Subpage />}></Route>
         <Route path="/login" element={<Loginpage />}></Route>
+        <Route path="/policy" element={<Policypage />}></Route>
         <Route path="/signup" element={<Signuppage />}></Route>
         <Route path="/succes" element={<SuccessPage />}></Route>
         <Route

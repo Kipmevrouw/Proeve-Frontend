@@ -178,7 +178,7 @@ const SignupForm = ({ Logo, SignupImages }) => {
               />
               <label htmlFor="agreement" className="SignupForm_form_agreetext">
                 Ik ga akkoord met de{" "}
-                <a href="/voorwaarden">algemene voorwaarden</a>.
+                <Link to="/policy"><a>algemene voorwaarden</a>.</Link>
               </label>
             </div>
             <button type={handleSubmit} className="SignupForm_Button">

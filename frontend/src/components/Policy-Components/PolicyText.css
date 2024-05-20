@@ -1,0 +1,25 @@
+.PolicyNav {
+  padding: 20px 20px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.PolicyLogo {
+  width: 190px;
+  height: auto;
+}
+
+.PolicyText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 25%;
+  gap: 10px;
+}
+
+@media (max-width: 500px) {
+  .PolicyText {
+    padding: 10px 15%;
+  }
+}
