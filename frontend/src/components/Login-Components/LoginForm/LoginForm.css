@@ -52,7 +52,7 @@
 }
 
 .LoginForm_Button {
-  margin: 35px 10px 15px 10px;
+  margin: 25px 10px 15px 10px;
   padding: 15px 130px;
   border-radius: 50px;
   border: none;
@@ -88,6 +88,14 @@
   width: 100%;
   max-height: 100vh;
   object-fit: cover;
+}
+
+.LoginForm_error {
+  max-width: 330px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 900px) {

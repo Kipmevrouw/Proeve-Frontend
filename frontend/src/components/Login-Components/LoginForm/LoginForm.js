@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./LoginForm.css";
 import React, { useState } from "react";
 import axios from 'axios';
@@ -8,12 +8,24 @@ const LoginForm = ({ Logo, loginImages }) => {
   const [achternaam, setAchternaam] = useState("");
   const [code, setCode] = useState("");
   const [wachtwoord, setWachtwoord] = useState("");
+  const [errorMessage, setErrorMessage] = useState(""); // State for error message
+  const navigate = useNavigate(); // Hook from react-router-dom to navigate
 
   const handleSubmit = (event) => {
     event.preventDefault();
-      axios.post('http://localhost:3002/login', {voornaam, achternaam, code, wachtwoord})
-      .then(res => console.log(res))
-      .catch(err => console.log(err));
+    axios.post('http://localhost:3002/login', {voornaam, achternaam, code, wachtwoord})
+      .then(res => {
+        if (res.data.success) {
+          localStorage.setItem('token', res.data.token); 
+          navigate('/studentpage'); 
+        } else {
+          setErrorMessage('Inloggegevens zijn onjuist. Probeer het opnieuw.'); // Set error message
+        }
+      })
+      .catch(err => {
+        setErrorMessage('Inloggegevens zijn onjuist. Probeer het opnieuw.'); 
+        console.log(err);
+      });
   };
 
   return (
@@ -67,9 +79,10 @@ const LoginForm = ({ Logo, loginImages }) => {
                 className="LoginForm_input"
               />
             </div>
-              <button type="submit" className="LoginForm_Button">
-                Inloggen
-              </button>
+            {errorMessage && <p className="LoginForm_error">{errorMessage}</p>}
+            <button type="submit" className="LoginForm_Button">
+              Inloggen
+            </button>
             <p className="LoginForm_p">
               Bent u docent? Klik dan{" "}
               <a href="" className="LoginForm_p_a">

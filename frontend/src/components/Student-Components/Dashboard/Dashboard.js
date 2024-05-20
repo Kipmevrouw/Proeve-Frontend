@@ -154,7 +154,7 @@ const Dashboard = ({ Logo, Images_1, Images_2, Images_3 }) => {
           </div>
         </div>
         <div className="dashboard_Nav">
-          <Link to="/">
+          <Link to="/logout">
             <button type="button" className="dashboard_Uitloggen">
               Uitloggen
             </button>
