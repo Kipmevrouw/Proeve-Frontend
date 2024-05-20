@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./SignupForm.css";
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
@@ -16,6 +16,9 @@ const SignupForm = ({ Logo, SignupImages }) => {
     akkoort_voorwaarden: false,
   });
 
+  const [isSuccess, setIsSuccess] = useState(false); 
+  const navigate = useNavigate(); 
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setValues({ ...values, [name]: value });
@@ -23,24 +26,31 @@ const SignupForm = ({ Logo, SignupImages }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-  
-  if (!String(values.code).startsWith("tyt")) {
-    alert("Onbekend nummer. Vraag hulp aan jouw docent!");
-    return;
-  }
 
-  event.preventDefault();
-  if (values.wachtwoord !== values.herhaalWachtwoord) {
-    alert("Wachtwoorden komen niet overeen");
-    return;
-  }  
-  
+    if (!String(values.code).startsWith("tyt")) {
+      alert("Onbekend nummer. Vraag hulp aan jouw docent!");
+      return;
+    }
+
+    if (values.wachtwoord !== values.herhaalWachtwoord) {
+      alert("Wachtwoorden komen niet overeen");
+      return;
+    }
+
     axios.post('http://localhost:3002/signup', values)
-      .then(res => console.log("succes!!!!!"))
+      .then(res => {
+        console.log("succes!!!!!");
+        setIsSuccess(true); 
+      })
       .catch(err => console.log(err));
   };
-  
-  
+
+  useEffect(() => {
+    if (isSuccess) {
+      navigate('/succes'); 
+    }
+  }, [isSuccess, navigate]);
+
   return (
     <>
       <div className="SignupFormNav">
@@ -171,7 +181,7 @@ const SignupForm = ({ Logo, SignupImages }) => {
                 <a href="/voorwaarden">algemene voorwaarden</a>.
               </label>
             </div>
-            <button type="submit" className="SignupForm_Button">
+            <button type={handleSubmit} className="SignupForm_Button">
               Registreren
             </button>
           </form>

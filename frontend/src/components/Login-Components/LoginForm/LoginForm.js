@@ -8,8 +8,8 @@ const LoginForm = ({ Logo, loginImages }) => {
   const [achternaam, setAchternaam] = useState("");
   const [code, setCode] = useState("");
   const [wachtwoord, setWachtwoord] = useState("");
-  const [errorMessage, setErrorMessage] = useState(""); // State for error message
-  const navigate = useNavigate(); // Hook from react-router-dom to navigate
+  const [errorMessage, setErrorMessage] = useState(""); 
+  const navigate = useNavigate(); 
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -19,7 +19,7 @@ const LoginForm = ({ Logo, loginImages }) => {
           localStorage.setItem('token', res.data.token); 
           navigate('/studentpage'); 
         } else {
-          setErrorMessage('Inloggegevens zijn onjuist. Probeer het opnieuw.'); // Set error message
+          setErrorMessage('Inloggegevens zijn onjuist. Probeer het opnieuw.'); 
         }
       })
       .catch(err => {

@@ -103,6 +103,16 @@
   cursor: pointer;
 }
 
+/* Succes pagina */
+.succesPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 10px;
+}
+
 @media (min-width: 900px) {
   .SignupFormSection {
     display: grid;
