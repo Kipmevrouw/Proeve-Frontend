@@ -167,3 +167,57 @@
     font-size: 12px;
   }
 }
+
+/* Ipad friendly */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .dashboard_Setup {
+    background-color: white;
+    height: 70%;
+    width: 90%;
+    border-radius: 30px;
+    padding: 50px;
+  }
+
+  .dashboard_Cards_responsive {
+    width: 40%;
+  }
+
+  .card_P {
+    font-size: 14px;
+  }
+
+  .card_A {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) {
+  .dashboard_Cards_responsive {
+    width: 35%;
+  }
+
+  .card_P {
+    font-size: 12px;
+  }
+
+  .card_A {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) {
+  .dashboard_h1 {
+    font-size: 25px;
+  }
+  .dashboard_Cards_responsive {
+    width: 35%;
+  }
+
+  .card_P {
+    font-size: 10px;
+  }
+
+  .card_A {
+    font-size: 10px;
+  }
+}

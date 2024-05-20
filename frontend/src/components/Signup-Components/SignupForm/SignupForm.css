@@ -167,3 +167,51 @@
     font-size: 12px;
   }
 }
+
+/* Ipad Friendly */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .SignupForm_input {
+    padding: 10px 50px;
+    border-radius: 50px;
+  }
+
+  .SignupForm_Button {
+    margin: 0px 40px;
+    padding: 13px 120px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) {
+  .SignupForm_input {
+    padding: 10px 50px;
+    border-radius: 50px;
+  }
+
+  .SignupForm_Button {
+    margin: 0px 40px;
+    padding: 13px 120px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) {
+  .SignupForm_input {
+    padding: 10px 50px;
+    border-radius: 50px;
+  }
+
+  .SignupForm_Button {
+    margin: 0px 40px;
+    padding: 10px 120px;
+    font-size: 12px;
+  }
+
+  .SignupForm_form_vinkje {
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px 10px 10px;
+    padding: 5px;
+    font-size: 12px;
+  }
+}

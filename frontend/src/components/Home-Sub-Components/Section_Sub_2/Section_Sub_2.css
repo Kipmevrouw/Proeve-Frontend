@@ -83,14 +83,14 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   .sectionCarousel_sub_2 {
-    max-width: 290px;
+    max-width: 280px;
     margin: 0 auto;
     padding: 30px 0px 50px 0px;
   }
 
   .sectionCarouselImg_sub {
-    width: 185px !important;
+    width: 175px !important;
   }
 }

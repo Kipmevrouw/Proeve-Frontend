@@ -42,17 +42,22 @@
 @media (max-width: 500px) {
   .photoCarousel {
     padding: 50px 20px;
-    max-width: 400px;
+    max-width: 390px;
     margin: 0 auto;
   }
 
   .photoCarouselImg {
-    width: 255px;
+    width: 240px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
+  .photoCarousel {
+    padding: 50px 20px;
+    max-width: 335px;
+    margin: 0 auto;
+  }
   .photoCarouselImg {
-    width: 200px;
+    width: 190px;
   }
 }

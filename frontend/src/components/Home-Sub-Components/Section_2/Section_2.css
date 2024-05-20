@@ -81,7 +81,7 @@
 @media (max-width: 500px) {
   .sectionCarousel {
     padding: 50px 20px;
-    max-width: 400px;
+    max-width: 390px;
     margin: 0 auto;
   }
 
@@ -90,18 +90,18 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .section_2_div_top {
     font-size: 1rem;
   }
 
   .sectionCarousel {
     padding: 30px 20px;
-    max-width: 400px;
+    max-width: 335px;
     margin: 0 auto;
   }
 
   .sectionCarouselImg {
-    width: 100px !important;
+    width: 185px !important;
   }
 }

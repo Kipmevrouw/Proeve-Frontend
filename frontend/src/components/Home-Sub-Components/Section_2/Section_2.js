@@ -20,6 +20,13 @@ const Section_2 = ({ Images_1, Images_2, Images_3, Images_4, Images_5 }) => {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
     ],
   };
   return (
