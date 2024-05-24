@@ -37,7 +37,7 @@ const SignupForm = ({ Logo, SignupImages }) => {
       return;
     }
 
-    axios.post('http://localhost:3002/signup', values)
+    axios.post('https://proeve-backend.onrender.com/signup', values)
       .then(res => {
         console.log("succes!!!!!");
         setIsSuccess(true); 
