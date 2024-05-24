@@ -13,7 +13,7 @@ const LoginForm = ({ Logo, loginImages }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:3002/login/login', {voornaam, achternaam, code, wachtwoord})
+    axios.post('http://localhost:3002/login', {voornaam, achternaam, code, wachtwoord})
       .then(res => {
         if (res.data.success) {
           localStorage.setItem('token', res.data.token); 

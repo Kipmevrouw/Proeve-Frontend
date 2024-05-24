@@ -37,7 +37,7 @@ const SignupForm = ({ Logo, SignupImages }) => {
       return;
     }
 
-    axios.post('http://localhost:3002/login/signup', values)
+    axios.post('http://localhost:3002/signup', values)
       .then(res => {
         console.log("succes!!!!!");
         setIsSuccess(true); 
