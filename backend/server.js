@@ -1,35 +1,27 @@
-require('dotenv').config();
-
 const express = require("express");
 const mysql = require("mysql");
 const cors = require("cors");
 const bcrypt = require("bcrypt");
-const dotenv = require("dotenv");
-
-dotenv.config();
-
-const saltRounds = parseInt(process.env.SALT_ROUNDS, 10);
+const salt = 10;
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
-  port: process.env.DB_PORT 
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "database_tyt",
 });
 
 app.post("/signup", (req, res) => {
   const sql =
-    "INSERT INTO gebruiker (`voornaam`, `achternaam`, `school`, `code`, `uitslag1`, `uitslag2`, `wachtwoord`, `akkoort_voorwaarden`) VALUES (?)";
+    "INSERT INTO gebruiker (`voornaam`, `achternaam`, `school`, `code`, `uitslag1`, `uitslag2`, `wachtwoord`, `akkoort_voorwaarden`) Values (?)";
   const wachtwoord = req.body.wachtwoord;
-  bcrypt.hash(wachtwoord.toString(), saltRounds, (err, hash) => {
+  bcrypt.hash(wachtwoord.toString(), salt, (err, hash) => {
     if (err) {
       console.log(err);
-      return res.status(500).json({ error: "Internal server error" });
     }
     const values = [
       req.body.voornaam,
@@ -49,39 +41,39 @@ app.post("/signup", (req, res) => {
 });
 
 app.post("/login", (req, res) => {
-  const sql =
-    "SELECT * FROM gebruiker WHERE voornaam = ? AND achternaam = ? AND code = ?";
-  db.query(
-    sql,
-    [req.body.voornaam, req.body.achternaam, req.body.code],
-    (err, data) => {
-      if (err) {
-        console.error(err);
-        return res.status(500).json({ error: "Internal server error" });
-      }
-
-      if (data.length === 0) {
-        return res.status(401).json({ error: "User not found" });
-      }
-
-      const hashedPassword = data[0].wachtwoord;
-
-      bcrypt.compare(req.body.wachtwoord, hashedPassword, (err, result) => {
+    const sql =
+      "SELECT * FROM gebruiker WHERE voornaam = ? AND achternaam = ? AND code = ?";
+    db.query(
+      sql,
+      [req.body.voornaam, req.body.achternaam, req.body.code],
+      (err, data) => {
         if (err) {
           console.error(err);
           return res.status(500).json({ error: "Internal server error" });
         }
-        if (result) {
-          return res.json({ success: "Login successful" });
-        } else {
-          return res.status(401).json({ error: "Incorrect credentials" });
-        }
-      });
-    }
-  );
-});
 
-const PORT = process.env.PORT || 3000;
+        if (data.length === 0) {
+          return res.status(401).json({ error: "User not found" });
+        }
+
+        const hashedPassword = data[0].wachtwoord;
+
+        bcrypt.compare(req.body.wachtwoord, hashedPassword, (err, result) => {
+          if (err) {
+            console.error(err);
+            return res.status(500).json({ error: "Internal server error" });
+          }
+          if (result) {
+            return res.json({ success: "Login successful" });
+          } else {
+            return res.status(401).json({ error: "Incorrect credentials" });
+          }
+        });
+      }
+    );
+  });  
+
+const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
