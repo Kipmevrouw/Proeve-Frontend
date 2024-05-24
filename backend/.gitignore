@@ -1,10 +1,9 @@
-# dependencies
-/node_modules
+node_modules/
+.env
 /.pnp
 .pnp.js
 
-
-# misc
+git
 .DS_Store
 .env.local
 .env.development.local
