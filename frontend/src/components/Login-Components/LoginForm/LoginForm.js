@@ -13,7 +13,7 @@ const LoginForm = ({ Logo, loginImages }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('https://proeve-backend.onrender.com/login', {voornaam, achternaam, code, wachtwoord})
+    axios.post('https://proeve-backend.onrender.com/api/login', {voornaam, achternaam, code, wachtwoord})
       .then(res => {
         if (res.data.success) {
           localStorage.setItem('token', res.data.token); 
