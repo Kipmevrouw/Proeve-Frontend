@@ -35,4 +35,5 @@ de workshops waarop ze ingedeeld zijn.
 - Bart Ros
 
 ## Het team:
-De [frontend] & [backend] (https://github.com/Kipmevrouw/Proeve-Front-end) wordt gebouwd door Becky van der Meulen.
+De [frontend] (https://github.com/Kipmevrouw/Proeve-Front-end) wordt gebouwd door Becky van der Meulen.
+De [backend] (https://github.com/Kipmevrouw/proeve-backend) wordt gebouwd door Becky van der Meulen.
