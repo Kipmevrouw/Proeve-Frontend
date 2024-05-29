@@ -1,9 +1,0 @@
-{
-  "deploy": {
-    "before": "npm install",
-    "after": ""
-  },
-  "start": {
-    "script": "npm start"
-  }
-}
