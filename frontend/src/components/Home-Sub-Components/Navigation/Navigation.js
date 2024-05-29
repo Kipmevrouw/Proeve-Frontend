@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
 const Navigation = ({ Logo }) => {
+  // This feature stops scrolling when using the hamburger menu
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {

@@ -27,7 +27,6 @@ const Homepage = () => {
         Images_8="/images/Home-Carousel-images/IMG_8460.webp"
         Images_9="/images/Home-Carousel-images/IMG_7388.webp"
       />
-
       <Footer FooterText="Copyright © 2024 Techcampus Amsterdam" />
     </>
   );

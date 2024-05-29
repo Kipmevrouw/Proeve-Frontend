@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "./PhotoCarousel.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// These are the arrows for the carousels
 const CustomPrevArrow = ({ onClick }) => (
   <div className="slick-arrow slick-prev" onClick={onClick}>
     <svg
@@ -30,6 +31,7 @@ const CustomNextArrow = ({ onClick }) => (
     </svg>
   </div>
 );
+// Carousel
 const PhotoCarousel = ({
   Images_1,
   Images_2,
