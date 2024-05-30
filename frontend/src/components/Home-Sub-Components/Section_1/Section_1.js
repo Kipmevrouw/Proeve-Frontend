@@ -20,7 +20,7 @@ const Section_1 = () => {
           </h1>
           <Link to="/workshops">
             <button type="button" className="Section_1_Button">
-              Ontdek de workshops hier!
+              Ontdek de 7 werelden hier!
             </button>
           </Link>
         </div>
